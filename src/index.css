@@ -1,10 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* --------- PRIMARY COLORS (LOGO) ----------
+  color: #8bc047;
+  color: #787745;
+  color: #f4934d;
+  ------------ SECONDARY COLORS ---------------
+  ----- expanding of greens -----
+  color: #427739;
+  color: #a7d27c;
+  color: #d7e7aa;
+  color: #a7cf3a;
+  color: #d6d37e;
+  color: #d5d5ac;
+  
+  ----- expanding of orange -----
+  color: #f7932d;
+  color: #fba928;
+  color: #a8792b;
+  color: #fed234;
+  color: #fed37f;
+  color: #fcfadb;
+
+  ----- complimentary colors -----
+  color: #430e42;
+  color: #aae0f3;
+  
+  --------------------------------------------*/
+  
+
+  /* --------- HELVETICA FONT ------------
+  regular, italic, and bold can be used for all needs
+  font-family: helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  --------------------------------------------*/
+
+  /* --------- LEAGUE GOTHIC FONT ------------
+  regular and italic can be used for all needs.
+  font-family: league-gothic [OR] league-gotic-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  --------------------------------------------*/
+
+  /* --------- MUSEO SLAB FONT ------------
+  100, 500, 700, or 1000 can be used for all needs.
+  font-family: museo-slab, serif;
+  font-style: normal;
+  font-weight: 100 [or] 500 [or] 700 [or] 1000;
+  --------------------------------------------*/
+
 }
 
 code {
