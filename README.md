@@ -1,4 +1,4 @@
-![LAFPC Logo](public/LAFPC_logo_2.png =200x200) 
+![LAFPC Logo](public/LAFPC_logo_2.png | width=200) 
 # LA Policy Food Council
 About the LA Food Policy Council [from their website](https://www.goodfoodla.org/):
 
