@@ -1,11 +1,11 @@
-![LAFPC Logo](public/LAFPC_logo_2.png | width=200) 
+![LAFPC Logo](<img src='/Users/erinjohnson/Documents/sei-cc-3/Hackathon/lafpc-food-dashboard/public/LAFPC_logo_2.png' width=200 height=200>) 
 # LA Policy Food Council
 About the LA Food Policy Council [from their website](https://www.goodfoodla.org/):
 
 * LA Food Policy Council's **Mission**:
     > The Los Angeles Food Policy Council (LAFPC) works to ensure food is healthy, affordable, fair and sustainable for all.
 
-* LA Food Policy Council's **Vision**:git 
+* LA Food Policy Council's **Vision**:
     > We believe Good Food for All is possible and that all communities deserve access to good food, grown in a way that respects people and the planet. We work to create a local food system free from hunger, rooted in equity and access, supportive of farmers and food workers, and guided by principles of environmental stewardship and regeneration. To accomplish our vision of Good Food for All, we catalyze, coordinate and connect people across the LA region, including government, business and community groups working on food.
 * Additional Info:
     > The Los Angeles Food Policy Council serves as backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food.

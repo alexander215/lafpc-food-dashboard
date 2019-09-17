@@ -35,7 +35,7 @@ class App extends Component {
         <NavBar />
         <Switch>
           <Route exact path={ROUTES.HOME} component= { Home } />
-          <Table db={firebase}/>
+          {/* <Table db={firebase}/> */}
           <Route exact path={ROUTES.HEALTHY_CONTAINER} component= { Healthy } />
           <Route exact path={ROUTES.SUSTAINABLE_CONTAINER} component= { Sustainable } />
           <Route exact path={ROUTES.AFFORDABLE_CONTAINER} component= { Affordable } />
