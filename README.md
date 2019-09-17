@@ -4,7 +4,7 @@
 
 [LA Food Policy Council](https://www.goodfoodla.org/) (LAFPC) "serves as [the] backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food."  In order to provide relevant and reliable data to these organizations, to policy-makers, and to members of the community, LAFPC needs a **dashboard** that displays this data in a digestible way that can be used by these oranizations and individuals to effect change in their communities and to work toward LAFPC's **Mission**, "to ensure food is healthy, affordable, fair and sustainable for all."  
 
-## How to use this Dashboard
+### How to use this Dashboard
 [insert instructions here on how to use the finished product and link to hosted webapp on heroku]
 
 ### User Stories
@@ -20,7 +20,7 @@ There are two users for this dashboard, the admin user and the public user.
 - Erin Johnson (Developer) ([Github](https://github.com/erinjohnson47), [LinkedIn](https://www.linkedin.com/in/erinjohnson47/))
 - Jennifer Sloane (UX/UI, Product Designer) ([Portfolio](https://www.jenniksloane.com/), [LinkedIn](https://www.linkedin.com/in/jenniksloane/))
 - Narek Khachatryan (Developer), ([Github](https://github.com/narex111), [LinkedIn](https://www.linkedin.com/in/narekkhachatryan/))
-- Preston Wheeler (UX/UI, Product Designer) ([Portfolio](www.prestonwheeler.com), [LinkedIn](https://www.linkedin.com/in/prestonwheeler/))
+- Preston Wheeler (UX/UI, Product Designer) ([Portfolio](https://www.prestonwheeler.com/), [LinkedIn](https://www.linkedin.com/in/prestonwheeler/))
 - Ruben Baez (UX/UI, Product Designer) ([Portfolio](https://www.rubenbaez.com/), [LinkedIn](https://www.linkedin.com/in/rubenbaez/))
 
 ### Technologies Used
