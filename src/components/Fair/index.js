@@ -1,9 +1,11 @@
 import React from 'react';
+import IntroCopy from '../IntroCopy';
 
 const Fair = () => {
     return (
         <div>
-            <h1>This is the Fair section.</h1>
+            <h2>This is the Fair section.</h2>
+            <IntroCopy />
         </div>
     )
 }

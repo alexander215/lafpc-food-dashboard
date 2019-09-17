@@ -1,9 +1,11 @@
 import React from 'react';
+import IntroCopy from '../IntroCopy';
 
 const Healthy = () => {
     return (
         <div>
-            <h1>This is the Healthy section.</h1>
+            <h2>This is the Healthy section.</h2>
+            <IntroCopy />
         </div>
     )
 }
