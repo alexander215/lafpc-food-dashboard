@@ -1,4 +1,4 @@
-<img src='/Users/erinjohnson/Documents/sei-cc-3/Hackathon/lafpc-food-dashboard/public/LAFPC_logo_2.png' width=75 height=75>
+<img src='/public/LAFPC_logo_2.png' width=75 height=75>
 
 # LA Food Policy Council Dashboard
 
