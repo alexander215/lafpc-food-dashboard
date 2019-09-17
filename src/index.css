@@ -2,6 +2,13 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "fjalla one", sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  color: #f59338;
+  text-transform: uppercase;
+  line-height: .9em;
+
   /* --------- PRIMARY COLORS (LOGO) ----------
   color: #8bc047;
   color: #787745;

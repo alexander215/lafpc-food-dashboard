@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![LAFPC Logo](public/LAFPC_logo_2.png) 
+# LA Policy Food Council
+About the LA Food Policy Council [from their website](https://www.goodfoodla.org/):
+LA Food Policy Council's **Mission**:
+> The Los Angeles Food Policy Council (LAFPC) works to ensure food is healthy, affordable, fair and sustainable for all.
+LA Food Policy Council's **Vision**:
+> We believe Good Food for All is possible and that all communities deserve access to good food, grown in a way that respects people and the planet. We work to create a local food system free from hunger, rooted in equity and access, supportive of farmers and food workers, and guided by principles of environmental stewardship and regeneration. To accomplish our vision of Good Food for All, we catalyze, coordinate and connect people across the LA region, including government, business and community groups working on food.
+> The Los Angeles Food Policy Council serves as backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food.
 
-## Available Scripts
+### User Story
+There are two users for this dashboard, the admin user and the public user.
+1. Admin - this user should be able to update, delete, and maintain the content and data published on the dashboard using a google drive of google sheets where the relevant data is organized and updated/removed as needed.
+2. Public - this user should be able access the dashboard by visiting the URL to view the the home page and four value pages, the public user should be able to filter for specific indicators/demographics/geographic locations, and download the "toolkit" containing a full report, value report, raw data, and fast facts sheet. 
 
-In the project directory, you can run:
+### Our Team
+- Ruben Baez (UX/UI, Product Designer)
+- Alexander Hoskinson (Developer)
+- Erin Johnson (Developer)
+- Narek Khachatryan (Developer)
+- Jennifer Sloane (UX/UI, Product Designer)
+- Preston Wheeler (UX/UI, Product Designer)
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Technologies Used
+- Javascript
+- HTML
+- CSS
+- Node.js
+- React
+- Google Firebase
+- Google Drive
+- Figma
