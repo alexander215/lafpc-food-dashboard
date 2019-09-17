@@ -11,6 +11,7 @@ import Affordable from '../Affordable';
 import Fair from '../Fair';
 import Footer from '../Footer';
 import Table from "../Table"
+import PageHeader from '../PageHeader';
 
 class App extends Component {
   constructor(props){
@@ -29,9 +30,7 @@ class App extends Component {
   render() {
     return (
       <div>
-          <h1>
-            LA Food Council Platform
-          </h1>
+        <PageHeader />
         <NavBar />
         <Switch>
           <Route exact path={ROUTES.HOME} component= { Home } />
