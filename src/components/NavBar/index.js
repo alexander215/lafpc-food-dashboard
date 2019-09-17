@@ -1,23 +1,32 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
-import { Link, withRouter } from 'react-router-dom';
+import { 
+    NavRectangleLeft, 
+    NavRectangleMiddleLeft,
+    NavRectangleMiddleRight,
+    NavRectangleRight,
+    NavContainer,
+    Link
+} from './style.js';
 
 const NavBar = () => {
     return (
         <div>
-            <hr/>
-            This is the navbar....
-             - 
-            <Link to={ROUTES.HOME}>Home</Link>
-             - 
-            <Link to={ROUTES.HEALTHY_CONTAINER}>Healthy</Link>
-             - 
-            <Link to={ROUTES.SUSTAINABLE_CONTAINER}>Sustainable</Link>
-             - 
-            <Link to={ROUTES.AFFORDABLE_CONTAINER}>Affordable</Link>
-             - 
-            <Link to={ROUTES.FAIR_CONTAINER}>Fair</Link>
-            <hr/>
+            <NavContainer>
+                <NavRectangleLeft>
+                    <Link exact to={ROUTES.HEALTHY_CONTAINER}>Healthy</Link>
+                </NavRectangleLeft>
+                <NavRectangleMiddleLeft>
+                    <Link exact to={ROUTES.SUSTAINABLE_CONTAINER}>Sustainable</Link>
+                </NavRectangleMiddleLeft>
+                <NavRectangleMiddleRight>
+                    <Link to={ROUTES.AFFORDABLE_CONTAINER}>Affordable</Link>
+                </NavRectangleMiddleRight>
+                <NavRectangleRight>
+                    <Link to={ROUTES.FAIR_CONTAINER}>Fair</Link> 
+                </NavRectangleRight>
+            </NavContainer>
         </div>
     )
 }
