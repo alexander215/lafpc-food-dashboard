@@ -1,9 +1,11 @@
 import React from 'react';
+import IntroCopy from '../IntroCopy';
 
 const Sustainable = () => {
     return (
         <div>
-            <h1>This is the Sustainable section.</h1>
+            <h2>This is the Sustainable section.</h2>
+            <IntroCopy />
         </div>
     )
 }
