@@ -1,16 +1,30 @@
 import styled from 'styled-components';
-import img from './dylan-de-jonge-449577-unsplash.jpg'
+import img from './erol-ahmed-407736.jpg'
 
 
-export const HeaderBackground = styled.div`
-    color: green;
-    background-image: url(${img});
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: -22.16%;
-    bottom: -452.69%;
-    height: 100px;
-
+export const HeaderContainer = styled.div`
+    height: 122px;
     `
-    // background-image: url('../../../public/images/dylan-de-jonge-449577-unsplash.jpg')
+export const HeaderBackground = styled.div`
+    background-image: url(${img});
+    background-position: center;
+    display: flex;
+    `
+
+export const HeaderLogo = styled.div`
+`
+
+export const HeaderTitle = styled.div `
+    margin: 37px 0;
+    font-family: Helvetica Neue;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #F9F9F3;
+`
+
+export const HeaderToolkit = styled.div`
+`
+
+export const HeaderWebLink = styled.div`
+`
