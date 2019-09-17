@@ -1,27 +1,27 @@
-![LAFPC Logo](<img src='/Users/erinjohnson/Documents/sei-cc-3/Hackathon/lafpc-food-dashboard/public/LAFPC_logo_2.png' width=200 height=200>) 
-# LA Policy Food Council
-About the LA Food Policy Council [from their website](https://www.goodfoodla.org/):
+<img src='/Users/erinjohnson/Documents/sei-cc-3/Hackathon/lafpc-food-dashboard/public/LAFPC_logo_2.png' width=75 height=75>
 
-* LA Food Policy Council's **Mission**:
-    > The Los Angeles Food Policy Council (LAFPC) works to ensure food is healthy, affordable, fair and sustainable for all.
+# LA Food Policy Council Dashboard
 
-* LA Food Policy Council's **Vision**:
-    > We believe Good Food for All is possible and that all communities deserve access to good food, grown in a way that respects people and the planet. We work to create a local food system free from hunger, rooted in equity and access, supportive of farmers and food workers, and guided by principles of environmental stewardship and regeneration. To accomplish our vision of Good Food for All, we catalyze, coordinate and connect people across the LA region, including government, business and community groups working on food.
-* Additional Info:
-    > The Los Angeles Food Policy Council serves as backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food.
+[LA Food Policy Council](https://www.goodfoodla.org/) (LAFPC) "serves as [the] backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food."  In order to provide relevant and reliable data to these organizations, to policy-makers, and to members of the community, LAFPC needs a **dashboard** that displays this data in a digestible way that can be used by these oranizations and individuals to effect change in their communities and to work toward LAFPC's **Mission**, "to ensure food is healthy, affordable, fair and sustainable for all."  
+
+## How to use this Dashboard
+[insert instructions here on how to use the finished product and link to hosted webapp on heroku]
 
 ### User Stories
 There are two users for this dashboard, the admin user and the public user.
-1. Admin - this user should be able to update, delete, and maintain the content and data published on the dashboard using a google drive of google sheets where the relevant data is organized and updated/removed as needed.
-2. Public - this user should be able access the dashboard by visiting the URL to view the the home page and four value pages, the public user should be able to filter for specific indicators/demographics/geographic locations, and download the "toolkit" containing a full report, value report, raw data, and fast facts sheet. 
+1. **Admin** - this user should be able to update, delete, and maintain the content and data published on the dashboard using a google drive of google sheets where the relevant data is organized and updated/removed as needed.
+2. **Public** - this user should be able access the dashboard by visiting the URL to view the the home page and four value pages, the public user should be able to filter for specific indicators/demographics/geographic locations, and download the "toolkit" containing a full report, value report, raw data, and fast facts sheet. 
+
+### Wireframes and UX Prototypes
+[insert our ux protypes from figma here]
 
 ### Our Team
-- Ruben Baez (UX/UI, Product Designer)
-- Alexander Hoskinson (Developer)
-- Erin Johnson (Developer)
-- Narek Khachatryan (Developer)
-- Jennifer Sloane (UX/UI, Product Designer)
-- Preston Wheeler (UX/UI, Product Designer)
+- Alexander Hoskinson (Developer) ([Github](https://github.com/alexander215), [LinkedIn](https://www.linkedin.com/in/alexhoskinson/), [Portfolio](https://alexhoskinson.com/))
+- Erin Johnson (Developer) ([Github](https://github.com/erinjohnson47), [LinkedIn](https://www.linkedin.com/in/erinjohnson47/))
+- Jennifer Sloane (UX/UI, Product Designer) ([Portfolio](https://www.jenniksloane.com/), [LinkedIn](https://www.linkedin.com/in/jenniksloane/))
+- Narek Khachatryan (Developer), ([Github](https://github.com/narex111), [LinkedIn](https://www.linkedin.com/in/narekkhachatryan/))
+- Preston Wheeler (UX/UI, Product Designer) ([Portfolio](www.prestonwheeler.com), [LinkedIn](https://www.linkedin.com/in/prestonwheeler/))
+- Ruben Baez (UX/UI, Product Designer) ([Portfolio](https://www.rubenbaez.com/), [LinkedIn](https://www.linkedin.com/in/rubenbaez/))
 
 ### Technologies Used
 - Javascript
@@ -32,3 +32,4 @@ There are two users for this dashboard, the admin user and the public user.
 - Google Firebase
 - Google Drive
 - Figma
+- Heroku
