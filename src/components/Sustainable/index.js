@@ -4,6 +4,8 @@ import DoubleComponent from '../DoubleComponent';
 import Map from '../MapComponent';
 import ToolkitComponent from '../Toolkit';
 import VideoComponent from '../VideoComponent';
+import Table from '../Table'
+
 
 
 const Sustainable = ({activeHeader, valueDetails}) => {
@@ -14,6 +16,7 @@ const Sustainable = ({activeHeader, valueDetails}) => {
             <Map />
             <ToolkitComponent />
             <VideoComponent />
+            <Table/>
         </div>
     )
 }
