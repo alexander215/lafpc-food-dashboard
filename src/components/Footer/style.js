@@ -36,10 +36,16 @@ export const FooterDiv = styled.div`
 `
 export const SocialMediaDiv = styled.div`
     cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
     X: 5px;
     Y: 5px;
     W: 30px;
     H: 30px;
     X Constraint: Scale;
     Y Constraint: Scale;
+`
+export const SocialMediaImg = styled.a`
+    width: 30px;
+    height: 30px;
 `

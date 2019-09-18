@@ -21,7 +21,7 @@ const PageHeader = () => {
                             <a href="#">Toolkit</a>
                         </HeaderToolkit>
                         <HeaderWebLink>
-                            <a href="https://www.goodfoodla.org/">goodfoodla.com</a>
+                            <a href="https://www.goodfoodla.org/" target="_blank">goodfoodla.com</a>
                         </HeaderWebLink>
                     </RightHalf>
                 </HeaderBackground>
