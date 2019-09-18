@@ -1,10 +1,10 @@
 import React from 'react';
 import IntroCopy from '../IntroCopy';
 
-const Fair = ({activeHeader}) => {
+const Fair = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader}/>
+            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
         </div>
     )
 }
