@@ -6,8 +6,7 @@ import SingleGraph from '../SingleGraph';
 
 const Home = () => {
     return (
-        <div> 
-            <SingleGraph />
+        <div>
             <HomeTextPoints />
             <VideoComponent />
         </div>
