@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
     `
 export const HeaderBackground = styled.div`
     background-image: url(${img});
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: space-between;
@@ -51,6 +52,9 @@ export const HeaderTitle = styled.div `
     font-size: 36px;
     line-height: 44px;
     color: #F9F9F3;
+    @media (max-width: 850px){
+        font-size: 12px;
+    }
 `
 
 export const HeaderToolkit = styled.div`
