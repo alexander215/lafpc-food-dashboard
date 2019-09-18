@@ -18,15 +18,14 @@ export const Logo = styled.img`
     padding: 12px 94px;    
 `
 export const FooterCopy = styled.div`
-    ${'' /* position: absolute; */}
-    left: 27.5%;
+    {'' /* left: 27.5%;
     right: 27.43%;
     top: 37%;
-    bottom: 36%;
+    bottom: 36%; */}
     font-family: Avenir Next;
     font-size: 20px;
     line-height: 27px;
-    padding: 25px auto;
+    padding: 25px 94px;
     color: #FFFFFF;
 ` 
 export const FooterDiv = styled.div`
@@ -36,5 +35,17 @@ export const FooterDiv = styled.div`
     height: 100px;
 `
 export const SocialMediaDiv = styled.div`
-
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
+    X: 5px;
+    Y: 5px;
+    W: 30px;
+    H: 30px;
+    X Constraint: Scale;
+    Y Constraint: Scale;
+`
+export const SocialMediaImg = styled.a`
+    width: 30px;
+    height: 30px;
 `
