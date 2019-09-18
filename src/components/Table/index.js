@@ -1,30 +1,27 @@
 import React, {Component} from 'react';
+import { SingleTableContainer, TableTitle, SourceLink } from './style.js'
+
 
 class Table extends Component {
     state = {
-        masterSheet: []
-    };
-
-    componentDidMount(){
-        console.log(this.props, 'this.props in componentDidMount')
-        const msRef = this.props.db.database().ref().child("masterSheet")
-        const childRef = msRef.child("0")
-        console.log(childRef, 'childRef in componentDidMount')
-        childRef.on("value", snapshot=>{
-            console.log(snapshot, "snpashot")
-            this.setState({
-                masterSheet: snapshot.val()
-            })
-        })
+        title: 'Table',
+        table: require('./table.png'),
+        source: 'https://static1.squarespace.com/static/5bc50618ab1a624d324ecd81/t/5be5fda240ec9a789e87e811/1541799360838/GoodFoodforAllAgenda2018.pdf', 
     }
 
     render(){
-        console.log(this.props.db)
-        console.log(this.state.masterSheet)
         return(
-        <div>
-            {this.state.masterSheet}
-        </div>
+            <div>
+                <SingleTableContainer>
+                    {/* <TableTitle>
+                        {this.state.title}
+                    </TableTitle> */}
+                    <img src={this.state.table}/>
+                </SingleTableContainer>
+                {/* <SourceLink>
+                    <a href={this.state.source} target="_blank">Click here to download.</a>
+                </SourceLink> */}
+            </div>
         )
     }
 }

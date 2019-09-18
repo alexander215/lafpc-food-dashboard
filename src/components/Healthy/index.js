@@ -14,6 +14,7 @@ const Healthy = ({activeHeader, valueDetails}) => {
             <Map />
             <ToolkitComponent />
             <VideoComponent />
+            <Table/>
         </div>
     )
 }
