@@ -13,7 +13,7 @@ const PageHeader = () => {
                             <img src={logo} alt="Logo" height="122" width="122"/>
                         </HeaderLogo>
                         <HeaderTitle>
-                            LA Food Council Policy Dashboard
+                            LA Food Policy Council Dashboard
                         </HeaderTitle>
                     </LeftHalf>
                     <RightHalf>

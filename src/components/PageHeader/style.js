@@ -15,7 +15,7 @@ export const HeaderBackground = styled.div`
     a:link {
         text-decoration: none;
         color: #F9F9F3;
-      }
+    }
     a:visited {
         text-decoration: none;
         color: #F9F9F3;
@@ -46,7 +46,7 @@ export const RightHalf = styled.div`
 export const HeaderTitle = styled.div `
     margin: 37px 0;
     font-family: Helvetica Neue;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 44px;
     color: #F9F9F3;
     @media (max-width: 850px){
