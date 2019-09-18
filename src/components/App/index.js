@@ -105,7 +105,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div class="total-container">
+        <div class="total-content">
         <PageHeader />
         <NavBar 
           handleValueClick={this.handleValueClick}
@@ -144,7 +145,10 @@ class App extends Component {
               valueDetails={this.state.masterSheet.fairValue}
               />} />
         </Switch>
-        <Footer />
+          </div> 
+            <div class="sticky-footer">
+              <Footer />
+            </div>
       </div>
     )
   }
