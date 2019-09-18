@@ -5,6 +5,7 @@ import DoubleComponent from '../DoubleComponent';
 import VideoComponent from '../VideoComponent';
 import Map from '../MapComponent'
 import ToolkitComponent from '../Toolkit';
+import CaseStudyCarousel from "../Carousel"
 
 const Healthy = ({activeHeader, valueDetails}) => {
     return (
@@ -15,6 +16,7 @@ const Healthy = ({activeHeader, valueDetails}) => {
             <ToolkitComponent />
             <VideoComponent />
             <Table/>
+            <CaseStudyCarousel/>
         </div>
     )
 }
