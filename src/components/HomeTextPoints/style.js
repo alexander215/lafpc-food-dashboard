@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeTextContainer = styled.div`
     max-width: 60%;
-    margin: 5% auto;
+    margin: 5% auto 2% auto;
 `
 export const LineContainer = styled.div`
     display: flex;
