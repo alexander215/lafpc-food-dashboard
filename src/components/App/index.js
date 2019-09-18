@@ -55,13 +55,22 @@ class App extends Component {
               />} />
           <Route 
             exact path={ROUTES.SUSTAINABLE_CONTAINER} 
-            component= { Sustainable } />
+            component= {() => <Sustainable
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
           <Route 
             exact path={ROUTES.AFFORDABLE_CONTAINER} 
-            component= { Affordable } />
+            component= {() => <Affordable
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
           <Route 
             exact path={ROUTES.FAIR_CONTAINER} 
-            component= { Fair } />
+            component= {() => <Fair
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
         </Switch>
         <Footer />
       </div>

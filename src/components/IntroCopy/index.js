@@ -1,9 +1,9 @@
 import React from 'react';
 
-const IntroCopy = () => {
+const IntroCopy = ({activeHeader}) => {
     return (
         <div>
-            This is the intro copy section. This is the intro copy section. This is the intro copy section. This is the intro copy section. This is the intro copy section. This is the intro copy section.
+            <h1>{activeHeader}</h1>
         </div>
     )
 }
