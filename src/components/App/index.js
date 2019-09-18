@@ -72,7 +72,7 @@ class App extends Component {
                 }, () => console.log(this.state.masterSheet.healthyValue, 'healthyValue'))
                 })
           }
-          if (this.state.activeHeader === 'SUSTAINABLE') {
+        else if (this.state.activeHeader === 'SUSTAINABLE') {
             sustainableVal.on("value", snapshot => {
                 this.setState({
                   masterSheet: {
@@ -81,7 +81,7 @@ class App extends Component {
                 }, () => console.log(this.state.masterSheet.sustainableValue, 'sustainableValue'))
               })
           }
-          if (this.state.activeHeader === 'AFFORDABLE') {
+          else if (this.state.activeHeader === 'AFFORDABLE') {
             affordableVal.on("value", snapshot => {
               this.setState({
                 masterSheet: {
@@ -90,7 +90,7 @@ class App extends Component {
               }, () => console.log(this.state.masterSheet.affordableValue, 'affordableValue'))
             })
           }
-          if (this.state.activeHeader === 'FAIR') {
+          else if (this.state.activeHeader === 'FAIR') {
             fairVal.on("value", snapshot => {
                 this.setState({
                   masterSheet: {
