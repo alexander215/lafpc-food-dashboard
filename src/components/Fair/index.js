@@ -5,15 +5,13 @@ import Map from '../MapComponent';
 import ToolkitComponent from '../Toolkit';
 import VideoComponent from '../VideoComponent';
 
-const Fair = ({activeHeader}) => {
+const Fair = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader}/>
+            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
             <DoubleComponent />
-
             <Map />
             <ToolkitComponent />
-
             <VideoComponent />
         </div>
     )

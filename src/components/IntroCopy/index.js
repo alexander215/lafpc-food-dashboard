@@ -1,9 +1,10 @@
 import React from 'react';
 
-const IntroCopy = ({activeHeader}) => {
+const IntroCopy = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <h1>{activeHeader}</h1>
+        {activeHeader}
+            {valueDetails}
         </div>
     )
 }

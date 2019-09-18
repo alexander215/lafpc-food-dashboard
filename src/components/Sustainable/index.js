@@ -6,15 +6,13 @@ import ToolkitComponent from '../Toolkit';
 import VideoComponent from '../VideoComponent';
 
 
-const Sustainable = ({activeHeader}) => {
+const Sustainable = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader}/>
+            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
             <DoubleComponent />
-
             <Map />
             <ToolkitComponent />
-
             <VideoComponent />
         </div>
     )

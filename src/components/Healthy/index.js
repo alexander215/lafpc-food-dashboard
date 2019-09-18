@@ -6,15 +6,13 @@ import VideoComponent from '../VideoComponent';
 import Map from '../MapComponent'
 import ToolkitComponent from '../Toolkit';
 
-const Healthy = ({activeHeader}) => {
+const Healthy = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader}/>
+            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
             <DoubleComponent />
-
             <Map />
             <ToolkitComponent />
-
             <VideoComponent />
         </div>
     )
