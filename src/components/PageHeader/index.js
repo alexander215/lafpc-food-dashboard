@@ -17,7 +17,7 @@ const PageHeader = () => {
                             </Link>
                         </HeaderLogo>
                         <HeaderTitle>
-                            LA Food Council Policy Dashboard
+                            LA Food Policy Council Dashboard
                         </HeaderTitle>
                     </LeftHalf>
                     <RightHalf>

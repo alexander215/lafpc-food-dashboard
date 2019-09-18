@@ -1,11 +1,10 @@
 import React from 'react';
 import IntroCopy from '../IntroCopy';
 
-const Sustainable = () => {
+const Sustainable = ({activeHeader}) => {
     return (
         <div>
-            <h2>This is the Sustainable section.</h2>
-            <IntroCopy />
+            <IntroCopy activeHeader={activeHeader}/>
         </div>
     )
 }

@@ -25,20 +25,52 @@ class App extends Component {
       messagingSenderId: "893039884595",
       appId: "1:893039884595:web:f2d0987d63330d530ea646"
     })
+    this.state = {
+      activeHeader: ''
+    }
+  }
+  handleValueClick = (e) => {
+    this.setState({
+      activeHeader: e.target.innerText
+    })
   }
 
   render() {
     return (
       <div>
         <PageHeader />
-        <NavBar />
+        <NavBar 
+          handleValueClick={this.handleValueClick}
+          activeHeader={this.state.activeHeader}
+          />
         <Switch>
-          <Route exact path={ROUTES.HOME} component= { Home } />
-          {/* <Table db={firebase}/> */}
-          <Route exact path={ROUTES.HEALTHY_CONTAINER} component= { Healthy } />
-          <Route exact path={ROUTES.SUSTAINABLE_CONTAINER} component= { Sustainable } />
-          <Route exact path={ROUTES.AFFORDABLE_CONTAINER} component= { Affordable } />
-          <Route exact path={ROUTES.FAIR_CONTAINER} component= { Fair } />
+          <Route 
+            exact path={ROUTES.HOME} 
+            component= { Home } />
+          <Route 
+            exact path={ROUTES.HEALTHY_CONTAINER} 
+            component= {() => <Healthy
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
+          <Route 
+            exact path={ROUTES.SUSTAINABLE_CONTAINER} 
+            component= {() => <Sustainable
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
+          <Route 
+            exact path={ROUTES.AFFORDABLE_CONTAINER} 
+            component= {() => <Affordable
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
+          <Route 
+            exact path={ROUTES.FAIR_CONTAINER} 
+            component= {() => <Fair
+              activeHeader={this.state.activeHeader}
+              handleValueClick={this.handleValueClick}
+              />} />
         </Switch>
         <Footer />
       </div>

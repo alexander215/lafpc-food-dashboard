@@ -13,7 +13,7 @@ export const Logo = styled.img`
 `
 export const FooterCopy = styled.div`
     font-family: Avenir Next;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 27px;
     padding: 37px 10px;
     color: #FFFFFF;
