@@ -1,6 +1,8 @@
 import React from 'react';
 import { HeaderContainer, HeaderBackground, LeftHalf, RightHalf, HeaderLogo, HeaderTitle, HeaderToolkit, HeaderWebLink } from './style.js'
 import logo from './Logo 2_hi res.png';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../constants/routes.js';
 
 
 const PageHeader = () => {
@@ -10,7 +12,9 @@ const PageHeader = () => {
                 <HeaderBackground>
                     <LeftHalf>
                         <HeaderLogo>
-                            <img src={logo} alt="Logo" height="122" width="122"/>
+                            <Link to={ROUTES.HOME}>
+                                <img src={logo} alt="Logo" height="122" width="122"/>
+                            </Link>
                         </HeaderLogo>
                         <HeaderTitle>
                             LA Food Council Policy Dashboard
@@ -25,7 +29,6 @@ const PageHeader = () => {
                         </HeaderWebLink>
                     </RightHalf>
                 </HeaderBackground>
-
             </HeaderContainer>
         </div>
 
