@@ -10,21 +10,45 @@ import {
     Link
 } from './style.js';
 
-const NavBar = () => {
+const NavBar = ({handleValueClick, activeHeader}) => {
     return (
         <div>
             <NavContainer>
                 <NavRectangleLeft>
-                    <Link exact to={ROUTES.HEALTHY_CONTAINER}>Healthy</Link>
+                    <Link 
+                        exact to={ROUTES.HEALTHY_CONTAINER}
+                        onClick={handleValueClick}
+                        active={activeHeader}
+                    >
+                    Healthy
+                    </Link>
                 </NavRectangleLeft>
                 <NavRectangleMiddleLeft>
-                    <Link exact to={ROUTES.SUSTAINABLE_CONTAINER}>Sustainable</Link>
+                    <Link 
+                        exact to={ROUTES.SUSTAINABLE_CONTAINER}
+                        onClick={handleValueClick}
+                        active={activeHeader}
+                    >
+                    Sustainable
+                    </Link>
                 </NavRectangleMiddleLeft>
                 <NavRectangleMiddleRight>
-                    <Link to={ROUTES.AFFORDABLE_CONTAINER}>Affordable</Link>
+                    <Link 
+                        exact to={ROUTES.AFFORDABLE_CONTAINER}
+                        onClick={handleValueClick}
+                        active={activeHeader}
+                    >
+                    Affordable
+                    </Link>
                 </NavRectangleMiddleRight>
                 <NavRectangleRight>
-                    <Link to={ROUTES.FAIR_CONTAINER}>Fair</Link> 
+                    <Link 
+                        exact to={ROUTES.FAIR_CONTAINER}
+                        onClick={handleValueClick}
+                        active={activeHeader}
+                    >
+                    Fair
+                    </Link> 
                 </NavRectangleRight>
             </NavContainer>
         </div>
