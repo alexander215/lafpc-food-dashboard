@@ -3,7 +3,7 @@ import { VideoContainer } from './style.js'
 
 class VideoComponent extends Component {
     state = {
-        video: 'https://www.youtube.com/embed/LGwmyf59u94',
+        video: 'https://www.youtube.com/embed/ooe8dURgHsA',
     }
 
     render(){

@@ -4,8 +4,7 @@ import SingleGraph from '../SingleGraph';
 
 const DoubleComponent = () => {
     return (
-        <DoubleContainer>
-            <SingleGraph />
+        <DoubleContainer>       
             <SingleGraph />
         </DoubleContainer>
 

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const MapContainer = styled.div`
-    background: #F9F9F3;
-    margin: 5% auto;
+    ${'' /* margin: 5% auto; */}
 `
     
 export const EmbeddedMap = styled.div`

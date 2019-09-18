@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const SingleGraphContainer = styled.div`
-    
+    width: 50%;
+    flex-direction: row;
 `
 
 export const GraphTitle = styled.div`
