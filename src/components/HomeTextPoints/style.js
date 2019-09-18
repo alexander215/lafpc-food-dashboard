@@ -26,6 +26,5 @@ export const CopyContainer = styled.div`
     font-family: Avenir Next;
     font-size: 20px;
     line-height: 27px;
-        
     color: #6E7176;
 `
