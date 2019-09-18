@@ -4,6 +4,7 @@ import Table from '../Table'
 import DoubleComponent from '../DoubleComponent';
 import VideoComponent from '../VideoComponent';
 import Map from '../MapComponent'
+import ToolkitComponent from '../Toolkit';
 
 const Healthy = ({activeHeader}) => {
     return (
@@ -12,6 +13,7 @@ const Healthy = ({activeHeader}) => {
             <DoubleComponent />
 
             <Map />
+            <ToolkitComponent />
 
             <VideoComponent />
         </div>

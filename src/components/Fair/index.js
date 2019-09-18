@@ -2,6 +2,7 @@ import React from 'react';
 import IntroCopy from '../IntroCopy';
 import DoubleComponent from '../DoubleComponent';
 import Map from '../MapComponent';
+import ToolkitComponent from '../Toolkit';
 import VideoComponent from '../VideoComponent';
 
 const Fair = ({activeHeader}) => {
@@ -11,6 +12,7 @@ const Fair = ({activeHeader}) => {
             <DoubleComponent />
 
             <Map />
+            <ToolkitComponent />
 
             <VideoComponent />
         </div>
