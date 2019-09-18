@@ -1,9 +1,11 @@
 import React from 'react';
+import HomeTextPoints from '../HomeTextPoints';
+
 
 const Home = () => {
     return (
         <div> 
-            <h1>This is the home page.</h1>
+            <HomeTextPoints />
         </div>
 
     )

@@ -20,12 +20,9 @@ export const HeaderBackground = styled.div`
         text-decoration: none;
         color: #F9F9F3;
         }
-    
     a:hover {
         text-decoration: underline;
         }
-
-
     `
 
 export const HeaderLogo = styled.div`
