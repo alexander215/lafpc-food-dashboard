@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavContainer = styled.div`
     display: flex;
+    justify-content: center;
     text-decoration: none;
     text-align: center;
     height: 50px;
