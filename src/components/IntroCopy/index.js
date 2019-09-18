@@ -1,11 +1,15 @@
 import React from 'react';
+import { 
+    IntroHeader,
+    IntroDiv
+} from './style';
 
 const IntroCopy = ({activeHeader, valueDetails}) => {
     return (
-        <div>
-        {activeHeader}
+        <IntroDiv>
+        <IntroHeader>{activeHeader}</IntroHeader>
             {valueDetails}
-        </div>
+        </IntroDiv>
     )
 }
 
