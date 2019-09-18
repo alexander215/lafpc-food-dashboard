@@ -1,4 +1,4 @@
-<img src='/public/LAFPC_logo_2.png' width=75 height=75>
+<img src='/public/images/LAFPC_logo_2.png' width=75 height=75>
 
 # LA Food Policy Council Dashboard
 
