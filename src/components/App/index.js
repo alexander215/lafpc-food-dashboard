@@ -29,79 +29,61 @@ class App extends Component {
     this.db = firebase.database()
     this.state = {
       activeHeader: '',
-      masterSheet: {
-        healthyValue: [],
-        sustainableValue: [],
-        affordableValue: [],
-        fairValue: []
-      }
+      masterSheet: [],
+      activeDetails: [] 
+      // {
+      //   healthyValue: [],
+      //   sustainableValue: [],
+      //   affordableValue: [],
+      //   fairValue: []
+      // }
     }
   }
 
   componentDidMount(){
-    // const msRef = this.db.ref("masterSheet")
-    // msRef.on("value", snapshot => {
-    //     this.setState({
-    //       masterSheet: snapshot.val()
-    //       // {
-    //       //   healthyValue: [healthyVal],
-    //       //   sustainableValue: [sustainableVal],
-    //       //   affordableValue: [affordableVal],
-    //       //   fairValue: [fairVal]
-    //       // }
-    //     }, () => console.log(this.state.masterSheet, 'masterSheet in state'))
-    // })
-    // // 
+    const msRef = this.db.ref("masterSheet")
+    msRef.on("value", snapshot => {
+        this.setState({
+          masterSheet: snapshot.val()
+          // {
+          //   healthyValue: [healthyVal],
+          //   sustainableValue: [sustainableVal],
+          //   affordableValue: [affordableVal],
+          //   fairValue: [fairVal]
+          // }
+        }, () => console.log(this.state.masterSheet, 'masterSheet in state'))
+    })
   }
-
+  activeStateSetsInfo = (activeHeader) => {
+    if (this.state.activeHeader === 'HEALTHY') {
+      this.setState({
+        activeDetails: this.state.masterSheet[0]
+      }, () => console.log(this.state.activeDetails, 'this.state.activeDetails'))
+      }
+    else if (this.state.activeHeader === 'SUSTAINABLE') {
+      this.setState({
+        activeDetails: this.state.masterSheet[1]
+      }, () => console.log(this.state.activeDetails, 'this.state.activeDetails'))
+        }
+    else if (this.state.activeHeader === 'AFFORDABLE') {
+      this.setState({
+        activeDetails: this.state.masterSheet[2]
+        }, () => console.log(this.state.activeDetails, 'this.state.activeDetails'))
+      }
+    else {
+          this.setState({
+            activeDetails: this.state.masterSheet[3]
+            }, () => console.log(this.state.activeDetails, 'fairValue'))
+    }
+  }
   handleValueClick = (e) => {
     this.setState({
       activeHeader: e.target.innerText
     }, () => {
-      const msRef = this.db.ref("masterSheet")
-        const healthyVal = msRef.child("0")
-        const sustainableVal = msRef.child("1")
-        const affordableVal = msRef.child("2")
-        const fairVal = msRef.child("3")
-      if (this.state.activeHeader === 'HEALTHY') {
-            healthyVal.on("value", snapshot => {
-                this.setState({
-                  masterSheet: {
-                    healthyValue: snapshot.val()
-                  }
-                }, () => console.log(this.state.masterSheet.healthyValue, 'healthyValue'))
-                })
-          }
-        else if (this.state.activeHeader === 'SUSTAINABLE') {
-            sustainableVal.on("value", snapshot => {
-                this.setState({
-                  masterSheet: {
-                    sustainableValue: snapshot.val()
-                  }
-                }, () => console.log(this.state.masterSheet.sustainableValue, 'sustainableValue'))
-              })
-          }
-          else if (this.state.activeHeader === 'AFFORDABLE') {
-            affordableVal.on("value", snapshot => {
-              this.setState({
-                masterSheet: {
-                  affordableValue: snapshot.val()
-                }
-              }, () => console.log(this.state.masterSheet.affordableValue, 'affordableValue'))
-            })
-          }
-          else if (this.state.activeHeader === 'FAIR') {
-            fairVal.on("value", snapshot => {
-                this.setState({
-                  masterSheet: {
-                    fairValue: snapshot.val()
-                  }
-                }, () => console.log(this.state.masterSheet.fairValue, 'fairValue'))
-            })
-          }
+      console.log(this.state.activeHeader, "activeHeader")
+      this.activeStateSetsInfo(this.state.activeHeader)
     })
   }
-
 
   render() {
     return (
@@ -120,28 +102,28 @@ class App extends Component {
             component= {() => <Healthy
               activeHeader={this.state.activeHeader}
               handleValueClick={this.handleValueClick}
-              valueDetails={this.state.masterSheet.healthyValue}
+              valueDetails={this.state.activeDetails}
               />} />
           <Route 
             exact path={ROUTES.SUSTAINABLE_CONTAINER} 
             component= {() => <Sustainable
               activeHeader={this.state.activeHeader}
               handleValueClick={this.handleValueClick}
-              valueDetails={this.state.masterSheet.sustainableValue}
+              valueDetails={this.state.activeDetails}
               />} />
           <Route 
             exact path={ROUTES.AFFORDABLE_CONTAINER} 
             component= {() => <Affordable
               activeHeader={this.state.activeHeader}
               handleValueClick={this.handleValueClick}
-              valueDetails={this.state.masterSheet.affordableValue}
+              valueDetails={this.state.activeDetails}
               />} />
           <Route 
             exact path={ROUTES.FAIR_CONTAINER} 
             component= {() => <Fair
               activeHeader={this.state.activeHeader}
               handleValueClick={this.handleValueClick}
-              valueDetails={this.state.masterSheet.fairValue}
+              valueDetails={this.state.activeDetails}
               />} />
         </Switch>
         <Footer />
