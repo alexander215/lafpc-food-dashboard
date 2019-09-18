@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom';
 import './App.css';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
 import * as ROUTES from '../../constants/routes.js';
 import NavBar from '../NavBar';
 import Home from '../Home';
@@ -10,12 +11,12 @@ import Sustainable from '../Sustainable';
 import Affordable from '../Affordable';
 import Fair from '../Fair';
 import Footer from '../Footer';
-import Table from "../Table"
+// import Table from "../Table"
 import PageHeader from '../PageHeader';
 
 class App extends Component {
-  constructor(props){
-    super(props)
+  constructor(){
+    super()
     firebase.initializeApp({
       apiKey: "AIzaSyDotqscj0pdXzEKwC0p44dT2vYtITVD6Y8",
       authDomain: "lafpc-food-dashboard.firebaseapp.com",
@@ -25,9 +26,30 @@ class App extends Component {
       messagingSenderId: "893039884595",
       appId: "1:893039884595:web:f2d0987d63330d530ea646"
     })
+    this.db = firebase.database()
     this.state = {
-      activeHeader: ''
+      activeHeader: '',
+      masterSheet: {}
     }
+  }
+
+  componentDidMount(){
+    console.log(this.db, 'this.db in componentDidMount')
+    const msRef = this.db.ref("masterSheet")
+    // const valueRef = msRef.child("0")
+    // const detailsRef = msRef.child("1")
+    msRef.on("value", snapshot => {
+        this.setState({
+            masterSheet: snapshot.val()
+        }, () => console.log(this.state.masterSheet, 'this.state.masterSheet'))
+    })
+    // detailsRef.on('value', snapshot => {
+    //   this.setState({
+    //     masterSheet: {
+    //       valueDetails: snapshot.val() 
+    //     }
+    //   }, () => console.log(this.state.masterSheet.valueDetails[1], 'this.state.masterSheet'))  
+    // })
   }
   handleValueClick = (e) => {
     this.setState({
@@ -52,6 +74,7 @@ class App extends Component {
             component= {() => <Healthy
               activeHeader={this.state.activeHeader}
               handleValueClick={this.handleValueClick}
+              valueDetails={this.state.masterSheet[1]}
               />} />
           <Route 
             exact path={ROUTES.SUSTAINABLE_CONTAINER} 
