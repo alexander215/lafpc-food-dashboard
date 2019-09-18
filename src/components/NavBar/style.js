@@ -26,19 +26,51 @@ export const NavRectangleLeft = styled.div`
     background-color: #52BAAF;
     width: 25%;
     padding: 10px;
+    &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
 `
 export const NavRectangleMiddleLeft = styled.div`
     background-color: #79B353;
     width: 25%;
     padding: 10px;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
 `
 export const NavRectangleMiddleRight = styled.div`
     background-color: #F59135;
     width: 25%;
     padding: 10px;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
 `
 export const NavRectangleRight = styled.div`
     background-color: #FCD243;
     width: 25%;
     padding: 10px;
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    }
 `
