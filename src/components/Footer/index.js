@@ -1,9 +1,9 @@
 import React from 'react';
-import img from './LAFPC_logo_1.png'
+import logo from './images/LAFPC_logo_1.png'
+import instagramLogo from './images/InstaLogo.svg'
+import twitterLogo from './images/TwitterLogo.svg'
+import facebookLogo from './images/FacebookLogo.svg'
 import { 
-    // FooterLeft,
-    // FooterCenter,
-    // FooterRight,
     FooterCopy,
     Logo,
     FooterDiv, 
@@ -13,16 +13,20 @@ import {
 const Footer = () => {
     return (
         <FooterDiv>
-            {/* <FooterLeft> */}
-                <Logo img src={img}></Logo>
-            {/* </FooterLeft> */}
-            {/* <FooterCenter> */}
-                <FooterCopy>
-                Copyright © 2019 Los Angeles Food Policy Council. All Rights Reserved
-                </FooterCopy>
-                <SocialMediaDiv></SocialMediaDiv>
-            {/* </FooterCenter> */}
+            <Logo img src={logo}></Logo>
+            <FooterCopy>
+            Copyright © 2019 Los Angeles Food Policy Council. All Rights Reserved
+            </FooterCopy>
+            <SocialMediaDiv>
+                <a 
+                    href='http://www.facebook.com/LosAngelesFoodPolicyCouncil'>
+                    <img src={facebookLogo} alt='Facebook Logo'></img> 
+                </a>
+                <a href='https://twitter.com/GoodFoodLA'> img src={twitterLogo}></a>
+                <a href='http://instagram.com/lagoodfood'> img src={instagramLogo}>
 
+                </a>
+            </SocialMediaDiv>
         </FooterDiv>
     )
 }
