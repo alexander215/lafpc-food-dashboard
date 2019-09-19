@@ -21,6 +21,7 @@ export const Link = styled(NavLink)`
     right: 26.39%;
     top: 22%;
     bottom: 24%;
+    
 `
 export const NavRectangleLeft = styled.div`
     background-color: #52BAAF;
@@ -34,6 +35,14 @@ export const NavRectangleLeft = styled.div`
         transform: translateY(1px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     }
+    a:link {
+        text-decoration: none;
+        color: #F9F9F3;
+    }
+    a:visited {
+        text-decoration: none;
+        color: #F9F9F3;
+        }
 `
 export const NavRectangleMiddleLeft = styled.div`
     background-color: #79B353;
@@ -47,6 +56,14 @@ export const NavRectangleMiddleLeft = styled.div`
         transform: translateY(1px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     }
+    a:link {
+        text-decoration: none;
+        color: #F9F9F3;
+    }
+    a:visited {
+        text-decoration: none;
+        color: #F9F9F3;
+        }
 `
 export const NavRectangleMiddleRight = styled.div`
     background-color: #F59135;
@@ -60,6 +77,14 @@ export const NavRectangleMiddleRight = styled.div`
         transform: translateY(1px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     }
+    a:link {
+        text-decoration: none;
+        color: #F9F9F3;
+    }
+    a:visited {
+        text-decoration: none;
+        color: #F9F9F3;
+        }
 `
 export const NavRectangleRight = styled.div`
     background-color: #FCD243;
@@ -73,4 +98,12 @@ export const NavRectangleRight = styled.div`
         transform: translateY(1px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
     }
+    a:link {
+        text-decoration: none;
+        color: #F9F9F3;
+    }
+    a:visited {
+        text-decoration: none;
+        color: #F9F9F3;
+        }
 `

@@ -20,7 +20,8 @@ class ToolkitComponent extends Component {
                                 <img src={dlicon}/>
                             </ImageContainer>
                             <LinkContainer>
-                                <a href={this.state.link}>
+                                <a href={this.state.link} target="_blank"
+>
                                     Download the Full Report
                                 </a>
                             </LinkContainer>
@@ -31,7 +32,7 @@ class ToolkitComponent extends Component {
                                 <img src={dlicon}/>
                             </ImageContainer>
                             <LinkContainer>
-                                <a href={this.state.link}>
+                                <a href={this.state.link} target="_blank">
                                     Download the Excel spreadsheet    
                                 </a>
                             </LinkContainer>
@@ -42,7 +43,7 @@ class ToolkitComponent extends Component {
                                 <img src={dlicon}/>
                             </ImageContainer>
                             <LinkContainer>
-                                <a href={this.state.link}>
+                                <a href={this.state.link} target="_blank">
                                     Download Value FastFacts
                                 </a>
                             </LinkContainer>

@@ -26,6 +26,7 @@ export const DesignDiv = styled.div`
     flex-display: row;
     justify-content: stretch;
     flex-wrap: nowrap;
+    padding: 5% 15%;
     `
     
     // justify-content: center;

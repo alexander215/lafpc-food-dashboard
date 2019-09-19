@@ -9,7 +9,6 @@ export const FooterDiv = styled.div`
 export const Logo = styled.img`
     height: 75px;
     width: 75px;
-    padding: 12px 0px;    
 `
 export const FooterCopy = styled.div`
     font-family: Avenir Next;

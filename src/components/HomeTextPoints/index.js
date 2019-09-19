@@ -18,7 +18,7 @@ class HomeTextPoints extends Component {
                         </IconContainer>
                         <TextContainer>
                             <TitleContainer>
-                                The 4 Pillars
+                                The 4 Values
                             </TitleContainer>
                             <CopyContainer>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et massa id eget tempor et condimentum quis. Id nisi, eget mattis ultricies. Felis dolor, diam ultrices augue. Amet urna, amet enim hendrerit sem molestie sit.

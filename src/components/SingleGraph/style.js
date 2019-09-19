@@ -13,6 +13,7 @@ export const GraphTitle = styled.div`
     /* identical to box height */
     margin: 0 0 0 4%;
     color: #156574;
+    padding: 5% 10%;
     `
     
     export const SourceLink = styled.div`
