@@ -5,6 +5,7 @@ import DoubleComponent from '../DoubleComponent';
 import VideoComponent from '../VideoComponent';
 import Map from '../MapComponent'
 import ToolkitComponent from '../Toolkit';
+import CaseStudyCarousel from "../Carousel"
 import SingleGraph from '../SingleGraph';
 import './style'
 import { FlexContainer } from './style';
@@ -19,6 +20,8 @@ const Healthy = ({activeHeader, valueDetails}) => {
             <Table/>
             <Map />
             <VideoComponent />
+            <Table/>
+            <CaseStudyCarousel/>
             <ToolkitComponent />
         </div>
     )
