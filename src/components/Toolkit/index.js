@@ -21,7 +21,7 @@ class ToolkitComponent extends Component {
                             </ImageContainer>
                             <LinkContainer>
                                 <a href={this.state.link}>
-                                    Download the full report
+                                    Download the Full Report
                                 </a>
                             </LinkContainer>
                         </ToolkitItem>
@@ -43,7 +43,7 @@ class ToolkitComponent extends Component {
                             </ImageContainer>
                             <LinkContainer>
                                 <a href={this.state.link}>
-                                    Download the Healthy PDF
+                                    Download Value FastFacts
                                 </a>
                             </LinkContainer>
                         </ToolkitItem>

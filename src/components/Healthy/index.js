@@ -6,17 +6,23 @@ import VideoComponent from '../VideoComponent';
 import Map from '../MapComponent'
 import ToolkitComponent from '../Toolkit';
 import CaseStudyCarousel from "../Carousel"
+import SingleGraph from '../SingleGraph';
+import './style'
+import { FlexContainer } from './style';
 
 const Healthy = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
-            <DoubleComponent />
+            <FlexContainer>
+                <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
+                <SingleGraph/>
+            </FlexContainer>
+            <Table/>
             <Map />
-            <ToolkitComponent />
             <VideoComponent />
             <Table/>
             <CaseStudyCarousel/>
+            <ToolkitComponent />
         </div>
     )
 }

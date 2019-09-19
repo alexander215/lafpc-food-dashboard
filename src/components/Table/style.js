@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SingleTableContainer = styled.div`
     text-align: center;
-    background: #F9F9F3;
     margin: 5% 0% 5% 0%;
 `
 

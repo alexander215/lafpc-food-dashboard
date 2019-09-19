@@ -5,17 +5,20 @@ import Map from '../MapComponent';
 import ToolkitComponent from '../Toolkit';
 import VideoComponent from '../VideoComponent';
 import Table from '../Table'
-
+import { FlexContainer } from './style';
+import SingleGraph from '../SingleGraph'
 
 const Affordable = ({activeHeader, valueDetails}) => {
     return (
         <div>
-            <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
-            <DoubleComponent />
-            <Map />
-            <ToolkitComponent />
-            <VideoComponent />
+            <FlexContainer>
+                <IntroCopy activeHeader={activeHeader} valueDetails={valueDetails}/>
+                <SingleGraph activeHeader={activeHeader}/>
+            </FlexContainer>
             <Table/>
+            <Map />
+            <VideoComponent />
+            <ToolkitComponent />
         </div>
     )
 }
