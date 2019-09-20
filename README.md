@@ -1,19 +1,26 @@
-<img src='/public/images/LAFPC_logo_2.png' width=75 height=75>
+![banner](public/images/HomepageBanner.png)
 
-# LA Food Policy Council Dashboard
+# LA Food Policy Council Dashboard (General Assembly Social Impact Hackathon)
 
-[LA Food Policy Council](https://www.goodfoodla.org/) (LAFPC) "serves as [the] backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food."  In order to provide relevant and reliable data to these organizations, to policy-makers, and to members of the community, LAFPC needs a **dashboard** that displays this data in a digestible way that can be used by these oranizations and individuals to effect change in their communities and to work toward LAFPC's **Mission**, "to ensure food is healthy, affordable, fair and sustainable for all."  
+[LA Food Policy Council](https://www.goodfoodla.org/) (LAFPC) "serves as [the] backbone organization for a network of over 400 organizations and agencies working for healthy, sustainable and fair food."  In order to provide relevant and reliable data to these organizations, to policy-makers, and to members of the community, LAFPC needs a **dashboard** that displays this data in a digestible way that can be used by these oranizations and individuals to effect change in their communities and to work toward LAFPC's **Mission**, "to ensure food is healthy, affordable, fair and sustainable for all."  General Assembly partnered with LA Food Policy Council for a Social Impact Hackathon where four teams of UX Designers and Software Engineers partnered up to create a Food System Dashboard for LAFPC to better serve their community in the name of "Good Food For All." 
 
-### How to use this Dashboard
-[insert instructions here on how to use the finished product and link to hosted webapp on heroku]
+### Crowd Favorite!
+While we did not win the hackathon, all of the teams worked hard and had awesome products!  Our web app won "Crowd Favorite" and we runners up in the competition.  We are all very proud of our projects and of each other!
+
+## [Go to the dashboard](https://lafpc-food-dashboard.firebaseapp.com/)
 
 ### User Stories
 There are two users for this dashboard, the admin user and the public user.
 1. **Admin** - this user should be able to update, delete, and maintain the content and data published on the dashboard using a google drive of google sheets where the relevant data is organized and updated/removed as needed.
 2. **Public** - this user should be able access the dashboard by visiting the URL to view the the home page and four value pages, the public user should be able to filter for specific indicators/demographics/geographic locations, and download the "toolkit" containing a full report, value report, raw data, and fast facts sheet. 
 
-### Wireframes and UX Prototypes
-[insert our ux protypes from figma here]
+### UX Design High-Fidelity Prototypes
+As software engineers, this was our first time getting the opportunity to work with ux designers.  They did extensive research (within the time constraints of the hackathon) and then designed a beautiful prototype for us to build.  It was a great experience and a lot of fun!
+
+#### The Home Page of the Food System Dashboard
+![home page](public/images/Homepage.png)
+### Healthy Value Page
+![healthy value page](public/images/Healthy.png)
 
 ### Our Team
 - Alexander Hoskinson (Developer) ([Github](https://github.com/alexander215), [LinkedIn](https://www.linkedin.com/in/alexhoskinson/), [Portfolio](https://alexhoskinson.com/))
@@ -26,10 +33,9 @@ There are two users for this dashboard, the admin user and the public user.
 ### Technologies Used
 - Javascript
 - HTML
-- CSS
-- Node.js
+- CSS/Styled Components
 - React
-- Google Firebase
+- Node.js
+- Google Firebase/Realtime Database
 - Google Drive
 - Figma
-- Heroku
